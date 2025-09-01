@@ -1,0 +1,11 @@
+# Ignore environment files
+.env
+*.pyc
+__pycache__/
+
+# Ignore local DB dumps
+*.sql~
+
+# Ignore virtual environments
+venv/
+.env.bak

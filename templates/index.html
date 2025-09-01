@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TEXT TO POT — African recipe recommender</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-circle">TP</div>
+      <div class="brand-text">
+        <h1>TEXT <span class="accent">TO</span> POT</h1>
+        <p class="tag">Turn your pantry into delicious African meals</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="input-panel card">
+      <h2>Start with ingredients</h2>
+      <p class="muted">Type ingredients you have (comma separated). Example: <em>chicken, tomatoes, onions, curry powder</em></p>
+      <textarea id="ingredients" placeholder="e.g., yam, spinach, palm oil..." rows="3"></textarea>
+      <div class="row">
+        <button id="suggestBtn" class="btn primary">Suggest Recipes</button>
+        <button id="refreshBtn" class="btn">Refresh Saved</button>
+      </div>
+      <div id="status" class="status muted"></div>
+    </section>
+
+    <section class="recipes-panel">
+      <h3>Suggested / Saved Recipes</h3>
+      <div id="recipesGrid" class="grid"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Made with ❤️ for African home cooks. <strong>TEXT TO POT</strong></p>
+    </footer>
+  </main>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
